@@ -5,13 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context="com.example.android.tabbedactivity.DoctorAddActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_size"
         android:orientation="horizontal">
 
         <ImageButton
@@ -23,8 +31,9 @@
 
 
         <EditText
+            android:text="Shanto"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:id="@+id/editText"
+            android:id="@+id/d_name_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -36,15 +45,25 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:paddingLeft="50dp"
+        android:paddingBottom="@dimen/padding_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <EditText
-        android:id="@+id/editText2"
+        android:text="Shanto"
+        android:id="@+id/d_speciality_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Speciality" />
+    </LinearLayout>
 
     <LinearLayout
+        android:paddingBottom="@dimen/padding_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -58,7 +77,9 @@
             app:srcCompat="@drawable/phone_call" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:text="Shanto"
+            android:hint="Phone number"
+            android:id="@+id/d_phone_number_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -67,6 +88,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:paddingBottom="@dimen/padding_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -79,7 +101,9 @@
             app:srcCompat="@drawable/mail" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:text="Shanto"
+            android:hint="Dr.user@gmail.com"
+            android:id="@+id/d_email_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -89,6 +113,32 @@
     </LinearLayout>
 
     <LinearLayout
+        android:paddingBottom="@dimen/padding_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/clock" />
+
+        <EditText
+            android:text="Shanto"
+            android:id="@+id/d_schedule_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Schedule"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="@dimen/padding_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -101,7 +151,9 @@
             app:srcCompat="@drawable/location" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:text="Shanto"
+            android:hint="Address"
+            android:id="@+id/d_address_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
